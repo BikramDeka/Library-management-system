@@ -8,10 +8,10 @@ $_SESSION['login']='';
 if(isset($_POST['login']))
 {
   //code for captach verification
-if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
-        echo "<script>alert('Incorrect verification code');</script>" ;
-    } 
-        else {
+// if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
+//         echo "<script>alert('Incorrect verification code');</script>" ;
+//     } 
+        // else {
 $email=$_POST['emailid'];
 $password=$_POST['password'];
 $sql ="SELECT EmailId,Password,StudentId,Status FROM tblstudents WHERE EmailId=:email and Password=:password";
@@ -39,7 +39,6 @@ echo "<script>alert('Your Account Has been blocked .Please contact admin');</scr
 
 else{
 echo "<script>alert('Invalid Details');</script>";
-}
 }
 }
 ?>
@@ -90,13 +89,13 @@ echo "<script>alert('Invalid Details');</script>";
 <div class="form-group">
 <label>Password</label>
 <input class="form-control" type="password" name="password" required autocomplete="off"  />
-<p class="help-block"><a href="user-forgot-password.php">Forgot Password</a></p>
+<!-- <p class="help-block"><a href="user-forgot-password.php">Forgot Password</a></p> -->
 </div>
 
- <div class="form-group">
+ <!-- <div class="form-group">
 <label>Verification code : </label>
 <input type="text" class="form-control1"  name="vercode" maxlength="5" autocomplete="off" required  style="height:25px;" />&nbsp;<img src="captcha.php">
-</div> 
+</div>  -->
 
  <button type="submit" name="login" class="btn btn-info">LOGIN </button> | <a href="signup.php">Not Register Yet</a>
 </form>

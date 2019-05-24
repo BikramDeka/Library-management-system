@@ -6,7 +6,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand">
+                <a class="navbar-brand" href="../">
 
                     <img src="assets/img/logo.png" />
                 </a>
@@ -25,7 +25,7 @@
                 <div class="col-md-12">
                     <div class="navbar-collapse collapse ">
                         <ul id="menu-top" class="nav navbar-nav navbar-right">
-                            <li><a href="dashboard.php" class="menu-top-active">DASHBOARD</a></li>
+                            <li><a href="dashboard.php">DASHBOARD</a></li>
                            
                             <li>
                                 <a href="#" class="dropdown-toggle" id="ddlmenuItem" data-toggle="dropdown"> Categories <i class="fa fa-angle-down"></i></a>
@@ -58,7 +58,7 @@
                             </li>
                              <li><a href="reg-students.php">Reg Students</a></li>
                     
-  <li><a href="change-password.php">Change Password</a></li>
+  <!-- <li><a href="change-password.php">Change Password</a></li> -->
                         </ul>
                     </div>
                 </div>

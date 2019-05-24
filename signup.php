@@ -5,10 +5,10 @@ error_reporting(0);
 if(isset($_POST['signup']))
 {
 //code for captach verification
-if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
-        echo "<script>alert('Incorrect verification code');</script>" ;
-    } 
-        else {    
+// if ($_POST["vercode"] != $_SESSION["vercode"] OR $_SESSION["vercode"]=='')  {
+//         echo "<script>alert('Incorrect verification code');</script>" ;
+//     } 
+//         else {    
 //Code for student ID
 $count_my_page = ("studentid.txt");
 $hits = file($count_my_page);
@@ -39,7 +39,6 @@ echo '<script>alert("Your Registration successfull and your student id is  "+"'.
 else 
 {
 echo "<script>alert('Something went wrong. Please try again');</script>";
-}
 }
 }
 ?>
@@ -140,10 +139,10 @@ error:function (){}
 <label>Confirm Password </label>
 <input class="form-control"  type="password" name="confirmpassword" autocomplete="off" required  />
 </div>
- <div class="form-group">
+ <!-- <div class="form-group">
 <label>Verification code : </label>
 <input type="text"  name="vercode" maxlength="5" autocomplete="off" required style="width: 150px; height: 25px;" />&nbsp;<img src="captcha.php">
-</div>                                
+</div>                                 -->
 <button type="submit" name="signup" class="btn btn-danger" id="submit">Register Now </button>
 
                                     </form>

@@ -21,13 +21,13 @@ echo "<script>alert('Invalid Details');</script>";
 }
 ?>
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml"> 
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
     <meta name="description" content="" />
     <meta name="author" content="" />
-    <title>Online Library Management System</title>
+    <title>KAUSTOV DEKA</title>
     <!-- BOOTSTRAP CORE STYLE  -->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
     <!-- FONT AWESOME STYLE  -->
@@ -40,7 +40,7 @@ echo "<script>alert('Invalid Details');</script>";
 </head>
 <body>
     <!------MENU SECTION START-->
-<?php include('includes/header.php');?>
+<?php /* include('includes/header.php'); */?>
 <!-- MENU SECTION END-->
 <div class="content-wrapper">
 <div class="container">
@@ -69,6 +69,7 @@ echo "<script>alert('Invalid Details');</script>";
 <input class="form-control" type="password" name="password" required />
 </div>
  <button type="submit" name="login" class="btn btn-info">LOGIN </button>
+ | <a href='../'>Return Home</a>
 </form>
  </div>
 </div>
